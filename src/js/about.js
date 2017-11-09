@@ -1,6 +1,3 @@
-import "../assets/styles/_page-account.scss"
+import "../assets/styles/_page-about.scss"
 
-var backBtn = document.getElementById('back-cta')
-backBtn.addEventListener('click', function () {
-    window.history.back();
-})
+console.log('test')

@@ -46,11 +46,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          //resolve-url-loader may be chained before sass-loader if necessary
-          use: ['css-loader', 'postcss-loader', 'sass-loader']
-        })
+        use: styles
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -88,7 +84,7 @@ module.exports = {
       allChunks: true
     }),
     new HtmlWebpackPlugin({
-      title: 'Account',
+      title: 'About',
       template: 'views/about.html',
       filename: 'about.html',
       chunks:['about']
