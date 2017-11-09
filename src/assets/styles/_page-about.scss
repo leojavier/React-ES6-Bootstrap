@@ -1,0 +1,430 @@
+@import 'common';
+
+.client-mentor-header {
+    background: $yellow;
+    padding-top: 1em;
+    padding-bottom: 50px;
+    h1, h3, p {
+        color:#FFF;
+    }
+    h3 {
+        margin-top:0;
+        font-size: 24px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 23.7px;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+    .ico-down {
+        font-size: 0.6em;
+        margin-top: 15px;
+        margin-right: 0;
+        float: right;
+    }
+    .child-thumb {
+        position: relative;
+        a {
+            position: absolute;
+            font-size: 24px;
+            right: 20px;
+            bottom: 0;
+            font-weight: 400;
+        }
+    }
+    img {
+        max-height: 35px;
+        margin-right: 10px;
+    }
+}
+.person-name {
+    position: relative;
+    &:hover>.profile-sub-menu{
+        display: block;
+    }
+    .profile-sub-menu{
+        position: absolute;
+        right: -11px;
+        top: 55px;
+        list-style: none;
+        background: $blue;
+        display: none;
+        padding:0;
+        &:before{
+            text-align: center;
+            font-family: 'icomoon';
+            padding-top: 10px;
+            content:"\E912";
+            font-size: 1.5em;
+            color:#FFF;
+            background: $blue;
+            width:50px;
+            height: 50px;
+            position: absolute;
+            top: -50px;
+            right: 0;
+        }
+        li {
+            span {
+                margin-right: 40px;
+                color: $orange;
+            }
+            a{
+                display: block;
+                padding: 10px 20px 10px 30px;
+                color:#FFF;
+                letter-spacing: 1px;
+                position:static;
+                font-size: 2em;
+                font-weight: 600;
+                &:hover  {
+                    background: lighten($blue, 10%)
+                }
+            }
+        }
+    }
+}
+.profiles-wrapper {
+    max-width: 1081px;
+    margin: auto;
+}
+.user-ico-wrapper {
+    width:160px;
+    height: 160px;
+    border-radius: 80px;
+    background: #FFF;
+    text-align: center;
+    padding-top: 40px;
+    margin: 20px auto 40px;
+    .ico-user {
+        color: $orange;
+        font-size: 5em;
+    }
+}
+small {
+    color: #FFF;
+}
+.primary-wrapper {
+    background: #FFF;
+    width: 100%;
+    padding:17px 17px;
+    margin-top: 0;
+    h1 {
+        font-size: 23px;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    h3 {
+        margin-top:31px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    label {
+        font-size: 12px;
+        color: rgba(20, 49, 81, 0.8);
+    }
+}
+
+.secondary-wrapper {
+    @extend .primary-wrapper;
+}
+.form-nav {
+    list-style: none;
+    padding: 30px 0 0 0;
+    li {
+        border-bottom: thin solid $blue;
+        width: 100%;
+        &:first-child() {
+            border-top: thin solid $blue;
+        }
+    }
+    a {
+        display: block;
+        padding: 15px 0;
+        font-weight: 800;
+        &:hover {
+            color: $yellow;
+        }
+    }
+    .ico-right {
+        float: right;
+        margin-right: 30px;
+    }
+    .active {
+        color: $yellow;
+        font-weight: 600;
+    }
+}
+.add-child-cta-mobile {
+    position: relative;
+    font-weight: 800;
+    display: block;
+    padding: 30px;
+    font-size: 1.2em;
+    text-align: center;
+    background: $light-grey;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+    &:hover {
+        background: $blue;
+        color: #FFF;
+    }
+}
+.field-group{
+    background: #FFF;
+    position: relative;
+    height: 50px;
+    input {
+        border: none;
+        outline: none;
+        background: transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+        padding-bottom: 3px;
+    }
+    .btn {
+        width: 100%;
+        background: transparent;
+    }
+    .ico-down {
+        right: 20px;
+        position: absolute;
+        top: 22px;
+    }
+}
+.form-button {
+    margin: 10px auto;
+    display: block;
+}
+
+@media (max-width: $screen-xs-max) { 
+    h1 {
+        font-weight: 800;
+        color: $blue;
+    }
+    
+    .account-page, .account-wrapper {
+        background: $yellow !important;
+    }
+    .field-group {
+        margin-top: 10px;
+        box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+    }
+    .client-mentor-header {
+        padding-bottom: 0;
+    }
+ }
+@media (min-width: $screen-sm-min) { 
+    .client-mentor-header {
+        padding-bottom: 52px;
+        padding-top: 52px;
+        p {
+            font-size: 20px;
+        }
+        .child-thumb {
+            position: static;
+            .add-child-cta {
+                margin-top: 22px;
+                font-size: 20px;
+                display: block;
+                position: static;
+                float: right;
+            }
+        }
+    }
+    .user-ico-wrapper {
+        width:80px;
+        height: 80px;
+        float: left;
+        padding-top: 15px;
+        margin: 20px auto 240px;
+        margin-right: 20px;
+        .ico-user {
+            color: $orange;
+            font-size: 3em;
+        }
+    }
+    .child-thumb {
+        border-right: thin solid #FFF;
+        padding-right: 35px;
+    }
+    .primary-wrapper {
+        box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+        background: $light-grey;
+        max-width: 1081px;
+        margin: auto;
+        padding: 20px 132px 80px 132px;
+        label {
+            font-size: 14px;
+        }
+        .add-child-cta{
+            margin-right: 0;
+            float: right;
+            margin-top: 50px;
+            font-weight: 400;
+            font-size: 0.95em;
+        }
+    }
+    .secondary-wrapper {
+        box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+        margin-top:20px !important;
+        .form-button {
+            margin-top:-50px;
+        }
+    }
+    .form-nav {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline-block;
+            border-bottom: none;
+            width: auto;
+            &:first-child() {
+                border-top: none;
+                a {
+                    padding-left: 0;
+                }
+            }
+        }
+        a {
+            display: block;
+            font-weight: 400;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .ico-right {
+            display: none;
+        }
+    }
+    .field-group{
+        background: transparent;
+        position: relative;
+        height: 70px;
+        margin-top: 20px;
+        input, .btn {
+            border-bottom: thin solid #FFF;
+            font-weight: 600;
+            color: $blue;
+        }
+        input {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .btn {
+            height: 50px;
+            text-align: left;
+            padding: 20px 0 0 10px;
+            text-transform: none;
+        }
+    }
+    .account-wrapper {
+        padding-bottom: 130px !important;
+    }
+    .account-button {
+        margin-top: -60px;
+        display: block;
+        font-size: 23px;
+        padding: 35px 60px;
+        font-weight: 600;
+    }
+    .profiles-wrapper {
+        h1 {
+            font-size: 29px;
+            margin-top:20px;
+            margin-bottom:0;
+        }
+        h3 {
+            margin-top:21px;
+            font-size: 32px;
+            font-weight: normal;
+        }
+    }
+ }
+@media (max-width: $screen-sm-max) {  
+    .client-mentor-header 
+    {
+        img {
+            max-height: 35px;
+            margin-right: 0;
+        }
+    }
+ }
+@media (min-width: $screen-md-min) { 
+    .profiles-wrapper {
+        h1 {
+            font-size: 45px;
+            margin-top:20px;
+            margin-bottom:0;
+        }
+        h3 {
+            margin-top:21px;
+            font-size: 32px;
+            font-weight: normal;
+        }
+        small {
+            font-size: 18px;
+        }
+    }
+    .user-ico-wrapper {
+        float: left;
+        padding-top: 29px;
+        margin: 20px auto 240px;
+        margin-right: 20px;
+        width: 124px;
+        height: 124px;
+        .ico-user {
+            color: #E09F3E;
+            font-size: 4em;
+            padding: 33px;
+        }
+    }
+    .client-mentor-header {
+            padding: 100px 0;
+            .child-thumb {
+            .add-child-cta {
+                position: static;
+                display: block;
+                font-size: 24px;
+                margin-top: 71px;
+                text-align: right;
+            }
+            img {
+                max-height: 43px;
+            }
+        }
+    }
+
+ }
+@media (max-width: $screen-md-max) { 
+    
+ }
+@media (min-width: $screen-lg-min) { 
+    .account-wrapper {
+        margin-top: -455px;
+    }
+    .primary-wrapper {
+        label {
+            font-size: 18px;
+        }
+    }
+    .client-mentor-header {
+        padding: 100px 0 450px;
+        p {
+           font-size: 23.7px !important;
+        }
+        img {
+            max-height: 46px !important;
+        }
+    }
+    .form-nav {
+        a {
+            font-size: 23px !important;
+        }
+    }
+    small {
+        font-size: 18px;
+    }
+ }

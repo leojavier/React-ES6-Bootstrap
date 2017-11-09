@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-plus:before {
+  content: "\e90b";
+}
+.ico-minus:before {
+  content: "\e90c";
+}
+.ico-check:before {
+  content: "\e90d";
+}
+.ico-twitter:before {
+  content: "\e901";
+}
+.ico-linkedin:before {
+  content: "\e902";
+}
+.ico-instagram:before {
+  content: "\e903";
+}
+.ico-facebook:before {
+  content: "\e904";
+}
+.ico-icon01:before {
+  content: "\e905";
+}
+.ico-icon02:before {
+  content: "\e914";
+}
+.ico-icon03:before {
+  content: "\e915";
+}
+.ico-arrow-lg-right:before {
+  content: "\e90e";
+}
+.ico-arrow-lg-left:before {
+  content: "\e90f";
+}
+.ico-top:before {
+  content: "\e910";
+}
+.ico-left:before {
+  content: "\e911";
+}
+.ico-down:before {
+  content: "\e912";
+}
+.ico-right:before {
+  content: "\e913";
+}
+.ico-arrows-right:before {
+  content: "\e906";
+}
+.ico-arrows-up:before {
+  content: "\e907";
+}
+.ico-arrows-left:before {
+  content: "\e908";
+}
+.ico-arrows-down:before {
+  content: "\e909";
+}
+.ico-resize:before {
+  content: "\e90a";
+}
+.ico-user:before {
+  content: "\e900";
+}
+.icon-checkbox:before {
+  content: "\e0c5";
+}
+.icon-checkbox-unchecked:before{
+  content: "\e0c6";
+}
+.icon-checkbox-partial:before{
+  content: "\e0c7";
+}
+
+
